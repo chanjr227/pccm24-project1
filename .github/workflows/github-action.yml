@@ -10,6 +10,8 @@ jobs:
 
       - name: Build and Tag Docker Image
         run: |
+        ls
+        date
           docker build -t alpine-github-action:v1 -f Dockerfile . 
-          
+
       - run: echo "🍏 This job's status is ${{ job.status }}."
